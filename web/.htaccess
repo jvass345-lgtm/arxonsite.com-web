@@ -1,0 +1,37 @@
+# arxonsite.com - prezentačná kópia webu arxonlabs.eu (bez databázy).
+
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # www -> bez www
+    RewriteCond %{HTTP_HOST} ^www\. [NC]
+    RewriteRule ^ https://arxonsite.com%{REQUEST_URI} [R=301,L]
+    # HTTP -> HTTPS
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+    # Portál a Stripe sú len na arxonlabs.eu
+    RewriteRule ^(portal/.*|stripe-webhook\.php)$ https://arxonlabs.eu/$1 [R=302,L]
+</IfModule>
+
+<FilesMatch "(^\.|^error_log$|\.(sql|md|log|bak|old|orig|save|swp|zip|tar|gz|7z|lock|ini)$|~$)">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=31536000"
+    Header always set X-Content-Type-Options "nosniff"
+    # Kým sa web upravuje, Google ho neindexuje. Pri spustení tento riadok zmaž.
+    Header always set X-Robots-Tag "noindex, nofollow"
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+AddType font/woff2 .woff2
