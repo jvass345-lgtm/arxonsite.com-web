@@ -10,7 +10,7 @@ $year = money(product_info(PRODUCT_YEAR)['amount']);
 $life = money(product_info(PRODUCT_LIFETIME)['amount']);
 $screens = [['tv', 'o_tv'], ['tv', 'o_box'], ['phone', 'o_mob'], ['win', 'o_win']];
 $features = [['epg', 'feat1'], ['archive', 'feat2'], ['film', 'feat3'], ['lock', 'feat4'], ['cloud', 'feat5'], ['globe', 'feat6']];
-$shots = [['d-player', 'shot_player'], ['d-archive', 'shot_archive'], ['d-movies', 'shot_movies'], ['d-settings', 'shot_settings']];
+$shots = [['d-player', 'shot_player'], ['d-home', 'shot_home'], ['d-archive', 'shot_archive'], ['d-movies', 'shot_movies'], ['d-settings', 'shot_settings']];
 page_open('index.php', t('home_title'), t('home_desc'), 'home');
 ?>
 <section class="o-hero">
