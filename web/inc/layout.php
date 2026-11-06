@@ -46,7 +46,7 @@ function page_open(string $active, string $title, string $description = '', stri
 <?php if ($description !== ''): ?><meta property="og:description" content="<?= h($description) ?>"><?php endif; ?>
 <meta property="og:image" content="<?= h(site_url()) ?>/assets/img/og-arxon.jpg">
 <link rel="stylesheet" href="assets/site.css?v=10">
-<?php if ($bodyClass === 'home'): ?><link rel="stylesheet" href="assets/home.css?v=4"><?php else: ?><link rel="stylesheet" href="assets/pages.css?v=1"><?php endif; ?>
+<?php if ($bodyClass === 'home'): ?><link rel="stylesheet" href="assets/home.css?v=4"><?php else: ?><link rel="stylesheet" href="assets/pages.css?v=2"><?php endif; ?>
 <script src="assets/site.js?v=2" defer></script>
 <?php foreach ($langs as $code => $_): ?>
 <link rel="alternate" hreflang="<?= $code ?>" href="<?= h(site_url() . '/' . ($self === 'index.php' ? '' : $self) . '?lang=' . $code) ?>">
@@ -62,7 +62,7 @@ function page_open(string $active, string $title, string $description = '', stri
         <?php foreach (NAV_PAGES as $file => $key): ?>
           <a href="<?= h(page_url($file)) ?>"<?= $file === $active ? ' aria-current="page"' : '' ?>><?= h(t($key)) ?></a>
         <?php endforeach; ?>
-        <a class="reseller-link" href="<?= h(page_url('reseller.php')) ?>"<?= $active === 'reseller.php' ? ' aria-current="page"' : '' ?>><?= h(t('nav_reseller')) ?></a>
+        <a class="reseller-link" href="predajcovia.php"<?= $active === 'predajcovia.php' ? ' aria-current="page"' : '' ?>><?= h(t('nav_reseller')) ?></a>
       </nav>
     <details class="lang">
       <summary aria-label="<?= h(t('language')) ?>"><?= h($langs[lang()]) ?> ▾</summary>
@@ -102,7 +102,8 @@ function page_close(): void
       <h2><?= h(t('foot_account')) ?></h2>
       <a href="<?= h(page_url('zariadenie.php')) ?>"><?= h(t('nav_device')) ?></a>
       <a href="<?= h(page_url('aktivacia.php')) ?>"><?= h(t('nav_activate')) ?></a>
-      <a href="<?= h(page_url('reseller.php')) ?>"><?= h(t('nav_reseller')) ?></a>
+      <a href="predajcovia.php"><?= h(t('rp_title')) ?></a>
+      <a href="<?= h(page_url('reseller.php')) ?>"><?= h(t('rp_login')) ?></a>
     </nav>
     <nav aria-label="<?= h(t('foot_info')) ?>">
       <h2><?= h(t('foot_info')) ?></h2>
