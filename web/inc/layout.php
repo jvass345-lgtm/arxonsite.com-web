@@ -45,8 +45,8 @@ function page_open(string $active, string $title, string $description = '', stri
 <meta property="og:title" content="<?= h($title) ?> · Arxon">
 <?php if ($description !== ''): ?><meta property="og:description" content="<?= h($description) ?>"><?php endif; ?>
 <meta property="og:image" content="<?= h(site_url()) ?>/assets/img/og-arxon.jpg">
-<link rel="stylesheet" href="assets/site.css?v=8">
-<?php if ($bodyClass === 'home'): ?><link rel="stylesheet" href="assets/home.css?v=2"><?php endif; ?>
+<link rel="stylesheet" href="assets/site.css?v=9">
+<?php if ($bodyClass === 'home'): ?><link rel="stylesheet" href="assets/home.css?v=3"><?php else: ?><link rel="stylesheet" href="assets/pages.css?v=1"><?php endif; ?>
 <script src="assets/site.js?v=1" defer></script>
 <?php foreach ($langs as $code => $_): ?>
 <link rel="alternate" hreflang="<?= $code ?>" href="<?= h(site_url() . '/' . ($self === 'index.php' ? '' : $self) . '?lang=' . $code) ?>">
