@@ -45,9 +45,9 @@ function page_open(string $active, string $title, string $description = '', stri
 <meta property="og:title" content="<?= h($title) ?> · Arxon">
 <?php if ($description !== ''): ?><meta property="og:description" content="<?= h($description) ?>"><?php endif; ?>
 <meta property="og:image" content="<?= h(site_url()) ?>/assets/img/og-arxon.jpg">
-<link rel="stylesheet" href="assets/site.css?v=9">
-<?php if ($bodyClass === 'home'): ?><link rel="stylesheet" href="assets/home.css?v=3"><?php else: ?><link rel="stylesheet" href="assets/pages.css?v=1"><?php endif; ?>
-<script src="assets/site.js?v=1" defer></script>
+<link rel="stylesheet" href="assets/site.css?v=10">
+<?php if ($bodyClass === 'home'): ?><link rel="stylesheet" href="assets/home.css?v=4"><?php else: ?><link rel="stylesheet" href="assets/pages.css?v=1"><?php endif; ?>
+<script src="assets/site.js?v=2" defer></script>
 <?php foreach ($langs as $code => $_): ?>
 <link rel="alternate" hreflang="<?= $code ?>" href="<?= h(site_url() . '/' . ($self === 'index.php' ? '' : $self) . '?lang=' . $code) ?>">
 <?php endforeach; ?>
@@ -87,20 +87,35 @@ function page_close(): void
     ?>
 </main>
 <footer class="foot">
-  <div class="wrap foot-in">
-    <div>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
       <a class="brand small" href="./"><?= logo_svg() ?><span>ARXON</span></a>
       <p class="muted"><?= h(t('foot_claim')) ?></p>
     </div>
-    <nav aria-label="<?= h(t('foot_links')) ?>">
-      <a href="podmienky.php"><?= h(t('terms')) ?></a>
-      <a href="sukromie.php"><?= h(t('privacy')) ?></a>
-      <a href="podpora.php"><?= h(t('nav_support')) ?></a>
+    <nav aria-label="<?= h(t('foot_app')) ?>">
+      <h2><?= h(t('foot_app')) ?></h2>
+      <a href="navody.php"><?= h(t('nav_guides')) ?></a>
+      <a href="novinky.php"><?= h(t('nav_news')) ?></a>
+      <a href="./#stiahnut"><?= h(t('stores_h')) ?></a>
+    </nav>
+    <nav aria-label="<?= h(t('foot_account')) ?>">
+      <h2><?= h(t('foot_account')) ?></h2>
+      <a href="<?= h(page_url('zariadenie.php')) ?>"><?= h(t('nav_device')) ?></a>
+      <a href="<?= h(page_url('aktivacia.php')) ?>"><?= h(t('nav_activate')) ?></a>
       <a href="<?= h(page_url('reseller.php')) ?>"><?= h(t('nav_reseller')) ?></a>
     </nav>
-    <p class="muted small">© <?= date('Y') ?> <?= h((string) (config()['company_name'] ?? 'Arxon Labs')) ?><?php
+    <nav aria-label="<?= h(t('foot_info')) ?>">
+      <h2><?= h(t('foot_info')) ?></h2>
+      <a href="podpora.php"><?= h(t('nav_support')) ?></a>
+      <a href="podmienky.php"><?= h(t('terms')) ?></a>
+      <a href="sukromie.php"><?= h(t('privacy')) ?></a>
+    </nav>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <?= date('Y') ?> <?= h((string) (config()['company_name'] ?? 'Arxon Labs')) ?><?php
         $ico = (string) (config()['company_id'] ?? '');
-        if ($ico !== '') echo ' · ' . h(t('company_id')) . ' ' . h($ico); ?></p>
+        if ($ico !== '') echo ' · ' . h(t('company_id')) . ' ' . h($ico); ?></span>
+    <span><?= h(t('home_disclaimer')) ?></span>
   </div>
 </footer>
 </body>

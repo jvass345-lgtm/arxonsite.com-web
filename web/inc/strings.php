@@ -520,4 +520,8 @@ return [
     'o_price_k' => ['Aktivácia', 'Aktiválás', 'Activation'],
     'o_price_d' => ['Žiadne predplatné ani automatické platby. 7 dní zadarmo na každom novom zariadení.', 'Nincs előfizetés és automatikus terhelés. 7 nap ingyen minden új eszközön.', 'No subscription, no automatic charges. 7 days free on every new device.'],
     'o_stores_k' => ['Inštalácia', 'Telepítés', 'Install'],
+
+    'foot_app' => ['Aplikácia', 'Alkalmazás', 'App'],
+    'foot_account' => ['Zariadenie a licencia', 'Eszköz és licenc', 'Device & licence'],
+    'foot_info' => ['Informácie', 'Információk', 'Information'],
 ];

@@ -151,3 +151,12 @@
   .o-poster { min-height: 300px; }
   .o-price { padding: 28px 22px; }
 }
+
+
+/* --- priehľadná hlavička nad úvodným obrázkom (len domovská) --- */
+body.home .top { position: fixed; left: 0; right: 0; border-bottom-color: transparent; backdrop-filter: none;
+  background: linear-gradient(180deg, rgba(14, 16, 11, .9) 0%, rgba(14, 16, 11, 0) 100%); transition: background .25s, border-color .25s; }
+body.home .top.solid, body.home .top.open { background: rgba(14, 16, 11, .94); backdrop-filter: blur(10px); border-bottom-color: var(--line); }
+body.home .o-hero { min-height: 92vh; }
+body.home .o-hero-in { padding-top: 140px; }
+@media (max-width: 640px) { body.home .o-hero-in { padding-top: 110px; } }

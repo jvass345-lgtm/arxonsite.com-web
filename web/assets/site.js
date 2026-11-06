@@ -14,6 +14,13 @@
       });
     }
 
+    // Domovská: hlavička je priehľadná nad obrázkom, po posunutí dostane pozadie.
+    if (top && document.body.classList.contains('home')) {
+      var onScroll = function () { top.classList.toggle('solid', window.scrollY > 40); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+
     // Jazykové menu sa zavrie kliknutím mimo.
     document.addEventListener('click', function (e) {
       document.querySelectorAll('details.lang[open]').forEach(function (d) {
