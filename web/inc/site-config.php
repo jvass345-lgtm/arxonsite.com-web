@@ -17,7 +17,7 @@ return [
     'company_vat' => '',          // DIČ / IČ DPH
     'company_register' => '',     // napr. Obchodný register Okresného súdu Bratislava I, oddiel Sro, vložka č. …
     'legal_date' => '',           // dátum účinnosti podmienok a zásad, napr. 2027-01-15
-    'support_email' => '',
+    'support_email' => 'support@arxonsite.com',
     'whatsapp' => '',
     'telegram' => '',
     'downloader_code' => '',
