@@ -80,3 +80,22 @@ a.card:hover { border-color: var(--teal); color: var(--text); }
 .rp-price .btn { margin-top: 20px; }
 @media (max-width: 1000px) { .rp-grid { grid-template-columns: repeat(2, 1fr); } .rp-split { grid-template-columns: 1fr; } }
 @media (max-width: 560px) { .rp-grid { grid-template-columns: 1fr; } .page-head .row .btn { width: 100%; } }
+
+/* --- právne texty: obsah, tabuľka, nevyplnené údaje --- */
+.legal-toc { margin: 18px 0 6px; padding: 14px 18px; border: 1px solid var(--line); border-radius: 12px; }
+.legal-toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; font-size: 14px; }
+.legal-toc a { color: inherit; }
+.legal h2 { scroll-margin-top: 90px; }
+.legal-table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 10px 0; }
+.legal-table th, .legal-table td { text-align: left; vertical-align: top; padding: 10px; border-bottom: 1px solid var(--line); }
+.legal-table th { color: var(--sand); font-weight: 600; }
+.legal mark { background: rgba(226, 195, 93, .18); color: #f0e2ac; border-radius: 4px; padding: 0 4px; }
+@media (max-width: 640px) {
+  .legal-toc ol { columns: 1; }
+  .legal-table, .legal-table tbody, .legal-table tr, .legal-table td { display: block; width: 100%; }
+  .legal-table tr:first-child { display: none; }
+  .legal-table tr { border-bottom: 1px solid var(--line); padding: 8px 0; }
+  .legal-table td { border: 0; padding: 4px 0; }
+  .legal-table td + td { font-size: 13px; opacity: .78; padding-left: 12px; border-left: 2px solid var(--line); }
+}
+.side mark, .card mark { background: rgba(226, 195, 93, .18); color: #f0e2ac; border-radius: 4px; padding: 0 4px; }

@@ -14,6 +14,9 @@ return [
     'company_name' => 'Arxon Labs',
     'company_id' => '',
     'company_address' => '',
+    'company_vat' => '',          // DIČ / IČ DPH
+    'company_register' => '',     // napr. Obchodný register Okresného súdu Bratislava I, oddiel Sro, vložka č. …
+    'legal_date' => '',           // dátum účinnosti podmienok a zásad, napr. 2027-01-15
     'support_email' => '',
     'whatsapp' => '',
     'telegram' => '',
