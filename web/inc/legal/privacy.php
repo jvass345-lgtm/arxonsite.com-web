@@ -33,7 +33,7 @@ return [
 <tr><td><b>Hovory a videohovory</b> (len ak sú pre zariadenie zapnuté): zoznam kontaktov (MAC a meno, ktoré zadáš), automatické prijatie, záznam o hovore (kto, komu, audio/video, stav, čas), technické údaje na nadviazanie spojenia</td><td>spojenie hovoru</td><td>plnenie zmluvy</td></tr>
 <tr><td><b>Platby na webe</b>: e-mail, produkt, suma, mena, jazyk, MAC zariadenia alebo účet predajcu, súhlas so začatím plnenia, čas platby</td><td>predaj licencie, doklad, účtovníctvo, reklamácie</td><td>plnenie zmluvy; zákonná povinnosť (písm. c))</td></tr>
 <tr><td><b>Predajcovia</b>: prihlasovacie meno, heslo (len ako hash), zobrazované meno, kredity a ich pohyby, priradené zariadenia</td><td>správa predajcov a licencií</td><td>plnenie zmluvy</td></tr>
-<tr><td><b>Kontakt s podporou</b>: e-mail, správa, prípadne MAC zariadenia</td><td>odpoveď na tvoju otázku</td><td>oprávnený záujem / plnenie zmluvy</td></tr>
+<tr><td><b>Kontakt s podporou</b>: e-mail, správa, prípadne MAC zariadenia, jazyk a IP adresa odosielateľa formulára</td><td>odpoveď na tvoju otázku</td><td>oprávnený záujem / plnenie zmluvy</td></tr>
 <tr><td><b>Technické údaje</b>: IP adresa a čas požiadavky v záznamoch servera, počítadlá pokusov (IP alebo MAC v podobe hashu)</td><td>bezpečnosť, ochrana pred útokmi a hádaním kľúčov</td><td>oprávnený záujem</td></tr>
 </table>
 <p>Nespracúvame tvoje meno, adresu, polohu, kontakty z telefónu ani históriu sledovania živého vysielania. Telefónne číslo cloudovej zálohy neukladáme v čitateľnej podobe – ukladáme len jeho hash.</p>'],
@@ -121,7 +121,7 @@ return [
 <tr><td><b>Hívások és videóhívások</b> (csak ha az eszközön engedélyezve): névjegyek (MAC és az általad megadott név), automatikus fogadás, hívásnapló (ki, kit, hang/videó, állapot, idő), a kapcsolat felépítéséhez szükséges technikai adatok</td><td>a hívás összekapcsolása</td><td>szerződés teljesítése</td></tr>
 <tr><td><b>Fizetés a weben</b>: e-mail, termék, összeg, pénznem, nyelv, eszköz MAC-címe vagy viszonteladói fiók, hozzájárulás a teljesítés megkezdéséhez, fizetés ideje</td><td>licencértékesítés, bizonylat, könyvelés, reklamáció</td><td>szerződés teljesítése; jogi kötelezettség (c))</td></tr>
 <tr><td><b>Viszonteladók</b>: felhasználónév, jelszó (csak hash), megjelenített név, kreditek és mozgásuk, hozzárendelt eszközök</td><td>viszonteladók és licencek kezelése</td><td>szerződés teljesítése</td></tr>
-<tr><td><b>Ügyfélszolgálat</b>: e-mail, üzenet, esetleg az eszköz MAC-címe</td><td>válasz a kérdésedre</td><td>jogos érdek / szerződés teljesítése</td></tr>
+<tr><td><b>Ügyfélszolgálat</b>: e-mail, üzenet, esetleg az eszköz MAC-címe, a nyelv és az űrlapot küldő IP-címe</td><td>válasz a kérdésedre</td><td>jogos érdek / szerződés teljesítése</td></tr>
 <tr><td><b>Technikai adatok</b>: IP-cím és időpont a szervernaplókban, próbálkozásszámlálók (IP vagy MAC hash formában)</td><td>biztonság, támadások és kulcstalálgatás elleni védelem</td><td>jogos érdek</td></tr>
 </table>
 <p>Nem kezeljük a neved, címed, helyadataidat, a telefonod névjegyeit és az élő adások nézési előzményeit. A felhőmentés telefonszámát nem tároljuk olvasható formában – csak a hash-ét.</p>'],
@@ -209,7 +209,7 @@ return [
 <tr><td><b>Voice and video calls</b> (only if enabled for the device): contacts (MAC and the name you enter), auto-answer, call record (who, to whom, audio/video, state, time), technical data to set up the connection</td><td>connecting the call</td><td>performance of contract</td></tr>
 <tr><td><b>Web payments</b>: e-mail, product, amount, currency, language, device MAC or reseller account, consent to immediate performance, payment time</td><td>selling the licence, receipt, accounting, complaints</td><td>performance of contract; legal obligation (c)</td></tr>
 <tr><td><b>Resellers</b>: username, password (hash only), display name, credits and their history, assigned devices</td><td>managing resellers and licences</td><td>performance of contract</td></tr>
-<tr><td><b>Support</b>: e-mail, message, possibly device MAC</td><td>answering your question</td><td>legitimate interest / performance of contract</td></tr>
+<tr><td><b>Support</b>: e-mail, message, possibly device MAC, language and the IP address of the form sender</td><td>answering your question</td><td>legitimate interest / performance of contract</td></tr>
 <tr><td><b>Technical data</b>: IP address and time in server logs, attempt counters (IP or MAC as a hash)</td><td>security, protection against attacks and key guessing</td><td>legitimate interest</td></tr>
 </table>
 <p>We do not process your name, address, location, phone contacts or live-TV viewing history. The cloud-backup phone number is not stored in readable form – only its hash.</p>'],
