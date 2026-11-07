@@ -10,8 +10,10 @@ $ph = static function (string $k, string $label) use ($c): string {
     return $v !== '' ? h($v) : '<mark>[' . h($label) . ']</mark>';
 };
 $firm = $ph('company_name', 'NÁZOV FIRMY s.r.o.');
-$addr = $ph('company_address', 'SÍDLO');
-$ico = $ph('company_id', 'IČO');
+// Sidlo a ICO sa ukazu, len ked su vyplnene (ako v podmienkach).
+$opt = static fn (string $k): string => h(trim((string) ($c[$k] ?? '')));
+$addr = $opt('company_address');
+$ico = $opt('company_id');
 page_open('podpora.php', t('nav_support'), t('sup_desc'));
 ?>
 <div class="wrap">
@@ -54,7 +56,7 @@ page_open('podpora.php', t('nav_support'), t('sup_desc'));
       </div>
       <div class="card stack small">
         <span class="eyebrow"><?= h(t('sup_operator')) ?></span>
-        <span><?= $firm ?><br><?= $addr ?><br>IČO <?= $ico ?></span>
+        <span><?= $firm ?><?php if ($addr !== ''): ?><br><?= $addr ?><?php endif; ?><?php if ($ico !== ''): ?><br>IČO <?= $ico ?><?php endif; ?></span>
         <span><a href="podmienky.php"><?= h(t('terms')) ?></a> · <a href="sukromie.php"><?= h(t('privacy')) ?></a></span>
       </div>
     </aside>
