@@ -9,7 +9,7 @@
 return [
 'sk' => [
 ['Kto spracúva tvoje údaje', '
-<p>Prevádzkovateľom je {FIRM}, {ADDR}, IČO {ICO}, zapísaná v {REG} (ďalej „my“). Kontakt pre otázky k osobným údajom: <a href="mailto:{MAIL}">{MAIL}</a>.</p>
+<p>Prevádzkovateľom je {FIRM}[[, {ADDR}]][[, IČO {ICO}]][[, zapísaná v {REG}]] (ďalej „my“). Kontakt pre otázky k osobným údajom: <a href="mailto:{MAIL}">{MAIL}</a>.</p>
 <p>Tieto zásady platia pre aplikáciu <b>Arxon Player</b> na všetkých platformách (Android TV, Android mobil, iPhone/iPad, Samsung Tizen, LG webOS, Windows a ďalšie), pre weby arxonsite.com a arxonlabs.eu, portál pre aplikácie, aplikáciu Arxon Admin a panel predajcov.</p>
 <p>Zodpovednú osobu (DPO) sme neurčili, pretože to zákon pri našom rozsahu spracúvania nevyžaduje.</p>'],
 
@@ -97,7 +97,7 @@ return [
 
 'hu' => [
 ['Ki kezeli az adataidat', '
-<p>Az adatkezelő: {FIRM}, {ADDR}, cégazonosító (IČO) {ICO}, nyilvántartva: {REG} (a továbbiakban „mi“). Kapcsolat adatvédelmi kérdésekben: <a href="mailto:{MAIL}">{MAIL}</a>.</p>
+<p>Az adatkezelő: {FIRM}[[, {ADDR}]][[, cégazonosító (IČO) {ICO}]][[, nyilvántartva: {REG}]] (a továbbiakban „mi“). Kapcsolat adatvédelmi kérdésekben: <a href="mailto:{MAIL}">{MAIL}</a>.</p>
 <p>Ez a tájékoztató az <b>Arxon Player</b> alkalmazásra vonatkozik minden platformon (Android TV, Android mobil, iPhone/iPad, Samsung Tizen, LG webOS, Windows stb.), valamint az arxonsite.com és arxonlabs.eu weboldalakra, az alkalmazások portáljára, az Arxon Admin alkalmazásra és a viszonteladói felületre.</p>
 <p>Adatvédelmi tisztviselőt nem jelöltünk ki, mert az adatkezelés mértéke miatt a jogszabály nem írja elő.</p>'],
 
@@ -185,7 +185,7 @@ return [
 
 'en' => [
 ['Who processes your data', '
-<p>The controller is {FIRM}, {ADDR}, company ID (IČO) {ICO}, registered in {REG} ("we"). Contact for data protection questions: <a href="mailto:{MAIL}">{MAIL}</a>.</p>
+<p>The controller is {FIRM}[[, {ADDR}]][[, company ID (IČO) {ICO}]][[, registered in {REG}]] ("we"). Contact for data protection questions: <a href="mailto:{MAIL}">{MAIL}</a>.</p>
 <p>This policy applies to the <b>Arxon Player</b> app on all platforms (Android TV, Android mobile, iPhone/iPad, Samsung Tizen, LG webOS, Windows and others), the websites arxonsite.com and arxonlabs.eu, the app portal, the Arxon Admin app and the reseller panel.</p>
 <p>We have not appointed a Data Protection Officer, as the law does not require one for the scale of our processing.</p>'],
 

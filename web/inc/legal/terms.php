@@ -9,7 +9,7 @@ return [
 'sk' => [
 ['Úvodné ustanovenia', '
 <p>Tieto obchodné a licenčné podmienky (ďalej „podmienky“) upravujú používanie aplikácie <b>Arxon Player</b> na všetkých platformách, nákup licencií a kreditov a používanie webov arxonsite.com a arxonlabs.eu.</p>
-<p>Poskytovateľ a predávajúci: {FIRM}, {ADDR}, IČO {ICO}, DIČ/IČ DPH {DIC}, zapísaná v {REG}, e-mail <a href="mailto:{MAIL}">{MAIL}</a> (ďalej „my“ alebo „predávajúci“).</p>
+<p>Poskytovateľ a predávajúci: {FIRM}[[, {ADDR}]][[, IČO {ICO}]][[, DIČ/IČ DPH {DIC}]][[, zapísaná v {REG}]], e-mail <a href="mailto:{MAIL}">{MAIL}</a> (ďalej „my“ alebo „predávajúci“).</p>
 <p>Inštaláciou alebo používaním aplikácie a nákupom licencie s týmito podmienkami súhlasíš. Ak s nimi nesúhlasíš, aplikáciu nepoužívaj.</p>'],
 
 ['Čo Arxon je a čo nie je', '
@@ -84,13 +84,13 @@ return [
 <p>Ak nie si spokojný s vybavením reklamácie, môžeš sa na nás obrátiť so žiadosťou o nápravu. Ak ju zamietneme alebo do 30 dní neodpovieme, môžeš podať návrh na alternatívne riešenie sporu Slovenskej obchodnej inšpekcii (<a href="https://www.soi.sk" rel="noopener">soi.sk</a>) alebo inému oprávnenému subjektu. Dozorným orgánom je Slovenská obchodná inšpekcia.</p>'],
 
 ['Záverečné ustanovenia', '
-<p>Podmienky sa riadia právom Slovenskej republiky; spotrebiteľ tým nestráca ochranu podľa práva štátu, v ktorom má bydlisko. Záväzné je slovenské znenie. Podmienky môžeme zmeniť; zmena sa netýka už zaplatených licencií v neprospech kupujúceho a o podstatnej zmene ťa upozorníme vopred. Podmienky sú účinné od {DATE}.</p>'],
+<p>Podmienky sa riadia právom Slovenskej republiky; spotrebiteľ tým nestráca ochranu podľa práva štátu, v ktorom má bydlisko. Záväzné je slovenské znenie. Podmienky môžeme zmeniť; zmena sa netýka už zaplatených licencií v neprospech kupujúceho a o podstatnej zmene ťa upozorníme vopred. [[Podmienky sú účinné od {DATE}.]]</p>'],
 ],
 
 'hu' => [
 ['Bevezető rendelkezések', '
 <p>Ezek az általános szerződési és licencfeltételek (a továbbiakban „feltételek“) szabályozzák az <b>Arxon Player</b> alkalmazás használatát minden platformon, a licencek és kreditek vásárlását, valamint az arxonsite.com és arxonlabs.eu weboldalak használatát.</p>
-<p>Szolgáltató és eladó: {FIRM}, {ADDR}, cégazonosító (IČO) {ICO}, adószám {DIC}, nyilvántartva: {REG}, e-mail <a href="mailto:{MAIL}">{MAIL}</a> (a továbbiakban „mi“ vagy „eladó“).</p>
+<p>Szolgáltató és eladó: {FIRM}[[, {ADDR}]][[, cégazonosító (IČO) {ICO}]][[, adószám {DIC}]][[, nyilvántartva: {REG}]], e-mail <a href="mailto:{MAIL}">{MAIL}</a> (a továbbiakban „mi“ vagy „eladó“).</p>
 <p>Az alkalmazás telepítésével vagy használatával és a licenc megvásárlásával elfogadod ezeket a feltételeket. Ha nem értesz egyet velük, ne használd az alkalmazást.</p>'],
 
 ['Mi az Arxon, és mi nem', '
@@ -165,13 +165,13 @@ return [
 <p>Ha nem vagy elégedett a reklamáció intézésével, jogorvoslati kérelemmel fordulhatsz hozzánk. Ha elutasítjuk, vagy 30 napon belül nem válaszolunk, alternatív vitarendezést kezdeményezhetsz a Szlovák Kereskedelmi Felügyeletnél (Slovenská obchodná inšpekcia, <a href="https://www.soi.sk" rel="noopener">soi.sk</a>) vagy más jogosult szervnél. Magyarországi lakosként a lakóhelyed szerinti békéltető testülethez is fordulhatsz.</p>'],
 
 ['Záró rendelkezések', '
-<p>A feltételekre a Szlovák Köztársaság joga irányadó; a fogyasztó ezzel nem veszíti el a lakóhelye szerinti állam jogának védelmét. A kötelező érvényű szöveg a szlovák nyelvű. A feltételeket módosíthatjuk; a módosítás a már kifizetett licenceket a vevő hátrányára nem érinti, és lényeges változásról előre értesítünk. A feltételek hatályosak: {DATE}.</p>'],
+<p>A feltételekre a Szlovák Köztársaság joga irányadó; a fogyasztó ezzel nem veszíti el a lakóhelye szerinti állam jogának védelmét. A kötelező érvényű szöveg a szlovák nyelvű. A feltételeket módosíthatjuk; a módosítás a már kifizetett licenceket a vevő hátrányára nem érinti, és lényeges változásról előre értesítünk. [[A feltételek hatályosak: {DATE}.]]</p>'],
 ],
 
 'en' => [
 ['Introduction', '
 <p>These terms and licence conditions ("terms") govern the use of the <b>Arxon Player</b> app on all platforms, the purchase of licences and credits, and the use of the arxonsite.com and arxonlabs.eu websites.</p>
-<p>Provider and seller: {FIRM}, {ADDR}, company ID (IČO) {ICO}, tax/VAT ID {DIC}, registered in {REG}, e-mail <a href="mailto:{MAIL}">{MAIL}</a> ("we" or "the seller").</p>
+<p>Provider and seller: {FIRM}[[, {ADDR}]][[, company ID (IČO) {ICO}]][[, tax/VAT ID {DIC}]][[, registered in {REG}]], e-mail <a href="mailto:{MAIL}">{MAIL}</a> ("we" or "the seller").</p>
 <p>By installing or using the app and buying a licence you agree to these terms. If you do not agree, do not use the app.</p>'],
 
 ['What Arxon is and isn\'t', '
@@ -246,6 +246,6 @@ return [
 <p>If you are not satisfied with how a complaint was handled, you may ask us for redress. If we reject it or do not reply within 30 days, you may submit a request for alternative dispute resolution to the Slovak Trade Inspection (Slovenská obchodná inšpekcia, <a href="https://www.soi.sk" rel="noopener">soi.sk</a>) or another authorised body, or to the ADR body in your EU country of residence.</p>'],
 
 ['Final provisions', '
-<p>These terms are governed by Slovak law; as a consumer you keep the protection of the law of your country of residence. The Slovak version is binding. We may change these terms; changes do not affect already paid licences to the buyer\'s detriment, and we will notify you of material changes in advance. These terms are effective from {DATE}.</p>'],
+<p>These terms are governed by Slovak law; as a consumer you keep the protection of the law of your country of residence. The Slovak version is binding. We may change these terms; changes do not affect already paid licences to the buyer\'s detriment, and we will notify you of material changes in advance. [[These terms are effective from {DATE}.]]</p>'],
 ],
 ];
